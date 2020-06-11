@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequencesTask", "SequencesTask\SequencesTask.csproj", "{D8E90F2F-D609-4345-B9E7-3E891AD962ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequencesTask.Tests", "SequencesTask.Tests\SequencesTask.Tests.csproj", "{4DF1F785-6DCB-4B43-B9F6-C0728DA04E16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8E90F2F-D609-4345-B9E7-3E891AD962ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E90F2F-D609-4345-B9E7-3E891AD962ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E90F2F-D609-4345-B9E7-3E891AD962ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E90F2F-D609-4345-B9E7-3E891AD962ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF1F785-6DCB-4B43-B9F6-C0728DA04E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF1F785-6DCB-4B43-B9F6-C0728DA04E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF1F785-6DCB-4B43-B9F6-C0728DA04E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF1F785-6DCB-4B43-B9F6-C0728DA04E16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
