@@ -1,11 +1,10 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace SequencesTask
 {
     public static class Sequences
     {
-
         /// <summary>
         /// Find all the contiguous substrings of length length in given string of digits in the order that they appear.
         /// </summary>
