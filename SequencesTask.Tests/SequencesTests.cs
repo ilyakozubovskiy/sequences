@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using NUnit.Framework;
 
 namespace SequencesTask.Tests
@@ -36,7 +36,7 @@ namespace SequencesTask.Tests
         }
 
         [Test]
-        public void  GetSubstrings_LengthOfSubstringIsNegative_ThrowArgumentException()
+        public void GetSubstrings_LengthOfSubstringIsNegative_ThrowArgumentException()
         {
             Assert.Throws<ArgumentException>(() => Sequences.GetSubstrings("123", -1));
         }
@@ -44,13 +44,13 @@ namespace SequencesTask.Tests
         [Test]
         public void GetSubstrings_LengthIsEmpty_ThrowArgumentException()
         {
-            Assert.Throws<ArgumentException>(() => Sequences.GetSubstrings("", 1));
+            Assert.Throws<ArgumentException>(() => Sequences.GetSubstrings(string.Empty, 1));
         }
         
         [Test]
         public void GetSubstrings_LengthIsNull_ThrowArgumentException()
         {
-            Assert.Throws<ArgumentException>(() => Sequences.GetSubstrings("", 1));
+            Assert.Throws<ArgumentException>(() => Sequences.GetSubstrings(string.Empty, 1));
         }
         
         [Test]
