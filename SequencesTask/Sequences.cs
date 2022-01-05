@@ -1,4 +1,5 @@
-using System;
+﻿using System;
+using System.Text.RegularExpressions;
 
 namespace SequencesTask
 {
@@ -21,7 +22,29 @@ namespace SequencesTask
         /// </exception>
         public static string[] GetSubstrings(string numbers, int length)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            if (string.IsNullOrWhiteSpace(numbers))
+            {
+                throw new ArgumentException($"{nameof(numbers)} cannot be null or empty or whitespace");
+            }
+
+            if (length > numbers.Length || length < 1)
+            {
+                throw new ArgumentException($"{nameof(numbers)} cannot be negative or zero or greater than the length of the source string");
+            }
+
+            if (!new Regex(@"^[0-9]+$").IsMatch(numbers))
+            {
+                throw new ArgumentException($"{nameof(numbers)} contains non-digit character");
+            }
+
+            string[] result = new string[numbers.Length - length + 1];
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                result[i] = numbers.Substring(i, length);
+            }
+
+            return result;
         }
     }
 }
